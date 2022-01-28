@@ -1,0 +1,19 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: react
+  title: React project template
+  description: Template from which you can create a frontend application
+  tags:
+    - frontend
+    - template
+spec:
+  owner: dx-team
+  type: website
+  parameters:
+    - title: Docker registry
+      properties:
+        setup_docker_registry:
+          title: Setup Docker registry
+          type: boolean
+          default: false
